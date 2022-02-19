@@ -7,12 +7,6 @@ import java.util.regex.Pattern;
 public class Profesor {
 
 	/*
-	 * Crea la clase Profesor con los atributos indicados, los métodos de acceso y
-	 * modificación con su visibilidad adecuada y el constructor con dos o tres
-	 * parámetros y el constructor copia. Crea también los métodos equals, hashCode
-	 * y toString, teniendo en cuenta que dos profesores serán iguales si su nombre
-	 * es el mismo. Haz un commit.
-	 * 
 	 * Los profesores podrán realizar reservas. Un profesor se identifica por su
 	 * nombre, su correo electrónico (que debe ser correcto) y su teléfono. El
 	 * teléfono puede proporcionarlo el profesor o no. Si lo indica será una cadena
@@ -78,13 +72,11 @@ public class Profesor {
 	public void setCorreo(String correo) {
 		if (correo == null) {
 			throw new NullPointerException("ERROR: El correo del profesor no puede ser nulo.");
-//
+
 		}
 
 		// No compruebo que sea vacío o esté en blanco, porque eso ocurriría si no
 		// cumple el patrón que es lo que compruebo abajo.
-
-		System.out.println(correo);
 
 		Pattern p = Pattern.compile(ER_CORREO);
 		Matcher m = p.matcher(correo);

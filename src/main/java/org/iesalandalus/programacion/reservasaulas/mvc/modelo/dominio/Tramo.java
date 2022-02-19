@@ -11,6 +11,9 @@ public enum Tramo {
 
 	public String toString() {
 		return cadenaAMostrar;
+		
 	}
 
 }
+
+

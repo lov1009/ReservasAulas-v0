@@ -95,7 +95,7 @@ public class Reserva {
 			return false;
 		Reserva other = (Reserva) obj;
 		return Objects.equals(aula, other.aula) && Objects.equals(permanencia, other.permanencia);
-	}
+	}//equals ya t dice si es true o false
 
 	@Override
 	public String toString() {
