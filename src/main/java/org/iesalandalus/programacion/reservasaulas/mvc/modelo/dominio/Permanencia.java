@@ -5,7 +5,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 public class Permanencia {
-
+	
+	 
 	/*
 	 * Crea la clase Permanencia con sus atributos especificados, los métodos de
 	 * acceso y modificación con su visibilidad adecuada y el constructor con dos
@@ -45,7 +46,8 @@ public class Permanencia {
 		if (dia == null) {
 			throw new NullPointerException("ERROR: El día de una permanencia no puede ser nulo.");
 		}
-
+		
+		
 		this.dia = dia;
 
 	}
@@ -58,6 +60,7 @@ public class Permanencia {
 		if (tramo == null) {
 			throw new NullPointerException("ERROR: El tramo de una permanencia no puede ser nulo.");
 		}
+		
 		this.tramo = tramo;
 	}
 
@@ -79,7 +82,7 @@ public class Permanencia {
 
 		return Objects.equals(dia, other.dia) && Objects.equals(tramo, other.tramo);
 	}
-
+	// CREO Q ESTA MAL LO DL FORMATO, REVISAR
 	@Override
 	public String toString() {
 		return "dia=" + dia.format(FORMATO_DIA) + ", tramo=" + tramo;
